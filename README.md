@@ -97,7 +97,10 @@ server {
     ```bash
    app.vm.synced_folder "environment/app", "/home/ubuntu/environment" 
    ```
-3. In the app provision script, use the symbolic link to link the `/home/ubuntu/environment` folder to a folder in the appropriate location.
+3. In `environment/app/provision.sh` provision script, use the symbolic link to link the `/home/ubuntu/environment` folder to a folder in the appropriate location.
+```bash
+sudo ln -s /home/ubuntu/environment/default /etc/nginx/sites-enabled/default
+```
 
 4. Restarted `NGINX` in order to effect changes
 ```bash
