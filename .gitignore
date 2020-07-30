@@ -1,0 +1,9 @@
+vagrant
+vagrant-ssh
+environment/app/vagrant-ssh
+environment/app/vagrant
+environment/app/ubuntu-xenial-16.04-cloudimg-console.log
+.vagrant/
+.idea/
+/venv
+venv
