@@ -134,6 +134,13 @@ Jul 30 08:22:37 ubuntu-xenial systemd[1]: Started A high performance web server 
 lines 1-17/17 (END)
 ```
 
+**Testing the configuration file**
+```bash
+root@ubuntu-xenial:/home/ubuntu/app# nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+```
+
 **Running app without port :3000**
 
 **File path:** `/vagrant/app/app.js`
