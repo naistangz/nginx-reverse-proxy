@@ -100,12 +100,15 @@ server {
    ```
 3. In `environment/app/provision.sh` provision script, use the symbolic link to link the `/home/ubuntu/environment` folder to a folder in the appropriate location.
 ```bash
-sudo rm /etc/nginx/sites-enabled/default
+sudo unlink /etc/nginx/sites-enabled/default
 sudo ln -s /home/ubuntu/environment/default /etc/nginx/sites-enabled/default
+
 ```
 
 4. Restart `NGINX` in order to effect changes
 ```bash
+sudo systemctl start nginx
+sudo systemctl stop nginx
 sudo systemctl restart nginx
 ```
 
