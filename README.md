@@ -132,10 +132,11 @@ lines 1-17/17 (END)
 ```
 
 **Running app without port :3000**
-File path: `/vagrant/app/app.js`
 
-Run `node app.js`
+**File path:** `/vagrant/app/app.js`
 
-Enter the following into the browser:
+**Run** `node app.js`
+
+**Enter the following into the browser:**
 
 `http://development.local/`
