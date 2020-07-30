@@ -102,7 +102,7 @@ server {
 sudo ln -s /home/ubuntu/environment/default /etc/nginx/sites-enabled/default
 ```
 
-4. Restarted `NGINX` in order to effect changes
+4. Restart `NGINX` in order to effect changes
 ```bash
 sudo rm /etc/nginx/sites-enabled/default
 sudo ln -s /home/ubuntu/environment/default /etc/nginx/sites-enabled/default
