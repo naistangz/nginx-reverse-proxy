@@ -93,19 +93,19 @@ server {
 
 ## Automating set up for reverse proxy
 1. Create a `default` file with the correct configuration to set up the reverse proxy in the `environment/app` folder on the local machine
-2. Sync this folder with a folder in the `app vm`:
+
+2. In the `Vagrantfile`, sync this folder with a folder in the `app vm`
     ```bash
    app.vm.synced_folder "environment/app", "/home/ubuntu/environment" 
    ```
 3. In `environment/app/provision.sh` provision script, use the symbolic link to link the `/home/ubuntu/environment` folder to a folder in the appropriate location.
 ```bash
+sudo rm /etc/nginx/sites-enabled/default
 sudo ln -s /home/ubuntu/environment/default /etc/nginx/sites-enabled/default
 ```
 
 4. Restart `NGINX` in order to effect changes
 ```bash
-sudo rm /etc/nginx/sites-enabled/default
-sudo ln -s /home/ubuntu/environment/default /etc/nginx/sites-enabled/default
 sudo systemctl restart nginx
 ```
 

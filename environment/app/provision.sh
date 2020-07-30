@@ -23,7 +23,6 @@ sudo npm install pm2 -g
 # setting up the nginx reverse proxy
 sudo rm /etc/nginx/sites-enabled/default
 sudo ln -s /home/ubuntu/environment/default /etc/nginx/sites-enabled/default
-
 sudo systemctl restart nginx
 
 
