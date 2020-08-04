@@ -15,18 +15,18 @@ Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ bundle --version
 Bundler version 2.1.4
 ```
 
-# Git Clone this repository onto your local machine 
+## Git Clone this repository onto your local machine 
 `git clone` [https://github.com/naistangz/nginx-reverse-proxy.git](https://github.com/naistangz/nginx-reverse-proxy.git)
 
-# cd into the project 
+## cd into the project 
 `Anaiss-MacBook-Pro: cd nginx-reverse-proxy`
 
-# Run vagrant in the directory
+## Run vagrant in the directory
 `Anaiss-MacBook-Pro: cd nginx-reverse-proxy`
 
 `vagrant up` in Terminal
 
-# Configuring NGINX as a Reverse Proxy
+## Configuring NGINX as a Reverse Proxy
 **All NGINX configuration files are located in the `/etc/nginx/` directory.**
 
 **Navigate to `/etc/nginx/` directory**
