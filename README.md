@@ -73,7 +73,8 @@ Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ bundle --version
 Bundler version 2.1.4
 ```
 
-# Run vagrant in the project 
+# Run vagrant in the correct directory
+`Anaiss-MacBook-Pro: cd name_of_folder`
 `vagrant up` in Terminal
 
 # Configuring NGINX as a Reverse Proxy
