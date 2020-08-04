@@ -138,8 +138,6 @@ sudo ln -s /home/ubuntu/environment/default /etc/nginx/sites-enabled/default
 
 4. Restart `NGINX` in order to effect changes
 ```bash
-sudo systemctl start nginx
-sudo systemctl stop nginx
 sudo systemctl restart nginx
 ```
 
@@ -172,13 +170,17 @@ nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
 ```
 
-7. **Running the app**
+# Running the app
 
-**File path:** `/vagrant/app/app.js`
+**File path:** `cd /vagrant/app/app.js`
 
-**Run** `node app.js`
+**Run the app** `node app.js`
 
-**Enter the following into the browser:**
+**Enter the following into the browser when you see the following:**
+```bash
+vagrant@ubuntu-xenial:/home/ubuntu/app$ node app.js
+Your app is ready and listening on port 3000
+```
 
 `http://development.local/`
 
