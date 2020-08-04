@@ -172,7 +172,7 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 # Running the app
 
-**File path:** `cd /vagrant/app/app.js`
+**File path:** `cd /home/ubuntu/app/app.js`
 
 **Run the app** `node app.js`
 
