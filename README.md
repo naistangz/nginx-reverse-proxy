@@ -172,3 +172,5 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 **Enter the following into the browser:**
 
 `http://development.local/`
+`http://development.local/fibonacci/8`
+`http://development.local/posts`
