@@ -57,7 +57,7 @@ Ensures no origin server ever communicates directly with that specific client| E
     - The proxy server can then cache (temporarily save) the response data.
     - Subsequent users in Madrid who browse the site will then get the locally cached version from the Madrid reverse proxy server, resulting in faster performance. 
 
-# Dependencies Prerequisites (for Mac Users)
+# Dependencies Prerequisites
 1. [Vagrant](https://www.vagrantup.com/downloads.html)
 2. [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
 3. [Ruby - Preinstalled in Mac](https://www.ruby-lang.org/en/downloads/)
