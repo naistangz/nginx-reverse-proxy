@@ -176,7 +176,7 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 **Run the app** `node app.js`
 
-**Enter the following into the browser when you see the following:**
+**Enter the following links into the browser when you see the following:**
 ```bash
 vagrant@ubuntu-xenial:/home/ubuntu/app$ node app.js
 Your app is ready and listening on port 3000
