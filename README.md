@@ -57,6 +57,13 @@ Ensures no origin server ever communicates directly with that specific client| E
     - The proxy server can then cache (temporarily save) the response data.
     - Subsequent users in Madrid who browse the site will then get the locally cached version from the Madrid reverse proxy server, resulting in faster performance. 
 
+# Prerequisites
+````bash
+vagrant
+virtual box
+ruby 
+````
+
 # Configuring NGINX as a Reverse Proxy
 **All NGINX configuration files are located in the `/etc/nginx/` directory.**
 
