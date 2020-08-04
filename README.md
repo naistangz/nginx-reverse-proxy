@@ -62,6 +62,7 @@ Ensures no origin server ever communicates directly with that specific client| E
 vagrant
 virtual box
 ruby (pre-installed on Mac)
+Bundler
 ````
 
 ## Checking versions for dependencies
@@ -70,6 +71,8 @@ Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ vagrant --version
 Vagrant 2.2.9
 Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ ruby --version
 ruby 2.3.7p456 (2018-03-28 revision 63024) [universal.x86_64-darwin18]
+Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ bundle --version
+Bundler version 2.1.4
 ```
 
 # Run vagrant in the project 
