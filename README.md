@@ -4,7 +4,7 @@
 3. [Ruby - Preinstalled in Mac](https://www.ruby-lang.org/en/downloads/)
 4. [Bundler](https://bundler.io/) or `gem install bundler` in **Terminal** after **Ruby** has been installed.
 
-# For the extended documentation, click [here](extendedREADME.md)
+**For the extended documentation, click** [here](extendedREADME.md)
 ## Checking versions for dependencies
 ```bash
 Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ vagrant --version
