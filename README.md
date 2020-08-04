@@ -63,6 +63,8 @@ vagrant
 virtual box
 ruby 
 ````
+# Run vagrant in the project 
+`vagrant up`
 
 # Configuring NGINX as a Reverse Proxy
 **All NGINX configuration files are located in the `/etc/nginx/` directory.**
@@ -105,10 +107,11 @@ server {
     }
 }
 ```
-- The `listen` directive tells NGINX the hostname/IP and the TCP port where it should listen for HTTP connections
+- The `listen` directive tells NGINX the hostname/IP and the Transmission Control Protocol (TCP) port where it should listen for HTTP connections
+- TCP is one of the main protocols of the Internet protocol suite. It is a connection-oriented communications protocol that facilitates the exchange of messages between computing devices in a network.
 - The `server_name` directive allows multiple domains to be served from a single IP address.
 - The `location` setting lets you configure **how** NGINX will respond to requests for resources within the server. 
-
+- The `proxy_pass` is used when there is an **nginx instance** that handles many things, and delegates some of those requests to other servers.
 
 ## Automating set up for reverse proxy
 1. Create a `default` file with the correct configuration to set up the reverse proxy in the `environment/app` folder on the local machine
