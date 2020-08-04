@@ -58,13 +58,23 @@ Ensures no origin server ever communicates directly with that specific client| E
     - Subsequent users in Madrid who browse the site will then get the locally cached version from the Madrid reverse proxy server, resulting in faster performance. 
 
 # Configuring NGINX as a Reverse Proxy
+**All NGINX configuration files are located in the `/etc/nginx/` directory.**
 
+**Navigating to `/etc/nginx/` directory**
 ```bash
 vagrant@ubuntu-xenial:/home/ubuntu/app$ cd /etc/nginx/
+```
+
+**Changing directory to sites-available**
+```bash
 vagrant@ubuntu-xenial:/etc/nginx$ ls
 conf.d        fastcgi_params  koi-win     nginx.conf    scgi_params      sites-enabled  uwsgi_params
 fastcgi.conf  koi-utf         mime.types  proxy_params  sites-available  snippets       win-utf
 vagrant@ubuntu-xenial:/etc/nginx$ cd sites-available
+```
+
+**Navigating to the configuration file**
+```bash
 vagrant@ubuntu-xenial:/etc/nginx/sites-available$ ls
 default
 vagrant@ubuntu-xenial:/etc/nginx/sites-available$ nano default
@@ -73,7 +83,7 @@ vagrant@ubuntu-xenial:/etc/nginx/sites-available$ sudo -i touch default
 vagrant@ubuntu-xenial:/etc/nginx/sites-available$ sudo nano default
 ```
 
-**Changing the file** `/etc/nginx/sites-enabled/default` in the app VM:
+**Changing the file** `/etc/nginx/sites-enabled/default`
 ```bash
 server {
     listen 80;
@@ -88,8 +98,10 @@ server {
     }
 }
 ```
-- The first part provides the **reverse proxy** for the webpage
-- The next part provides the **reverse proxy** for the image 
+- The `listen` directive tells NGINX the hostname/IP and the TCP port where it should listen for HTTP connections
+- The `server_name` directive allows multiple domains to be served from a single IP address.
+- The `location` setting lets you configure **how** NGINX will respond to requests for resources within the server. 
+
 
 ## Automating set up for reverse proxy
 1. Create a `default` file with the correct configuration to set up the reverse proxy in the `environment/app` folder on the local machine
