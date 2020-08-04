@@ -57,19 +57,28 @@ Ensures no origin server ever communicates directly with that specific client| E
     - The proxy server can then cache (temporarily save) the response data.
     - Subsequent users in Madrid who browse the site will then get the locally cached version from the Madrid reverse proxy server, resulting in faster performance. 
 
-# Prerequisites
+# Dependencies Prerequisites (for Mac Users)
 ````bash
 vagrant
 virtual box
-ruby 
+ruby (pre-installed on Mac)
 ````
+
+## Checking versions for dependencies
+```bash
+Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ vagrant --version
+Vagrant 2.2.9
+Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ ruby --version
+ruby 2.3.7p456 (2018-03-28 revision 63024) [universal.x86_64-darwin18]
+```
+
 # Run vagrant in the project 
-`vagrant up`
+`vagrant up` in Terminal
 
 # Configuring NGINX as a Reverse Proxy
 **All NGINX configuration files are located in the `/etc/nginx/` directory.**
 
-**Navigating to `/etc/nginx/` directory**
+**Navigate to `/etc/nginx/` directory**
 ```bash
 vagrant@ubuntu-xenial:/home/ubuntu/app$ cd /etc/nginx/
 ```
@@ -156,14 +165,14 @@ Jul 30 08:22:37 ubuntu-xenial systemd[1]: Started A high performance web server 
 lines 1-17/17 (END)
 ```
 
-**Testing the configuration file**
+6. **Testing the configuration file**
 ```bash
 root@ubuntu-xenial:/home/ubuntu/app# nginx -t
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
 ```
 
-**Running app without port :3000**
+7. **Running the app**
 
 **File path:** `/vagrant/app/app.js`
 
