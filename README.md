@@ -45,15 +45,15 @@ Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ bundle --version
 Bundler version 2.1.4
 ```
 
-
-## Change directory (cd) into the project 
+## Running Vagrant 
+1.  Change directory (cd) into the project 
 `Anaiss-MacBook-Pro: cd nginx-reverse-proxy`
 
-## Run vagrant in nginx-reverse-proxy folder
+2. Run vagrant in nginx-reverse-proxy folder
 `$ vagrant up` in Terminal
 This will create, configure and provision two virtual machines, the `app` and `db` machine according to the Vagrantfile.
 
-## Accessing the shell with Vagrant SSH
+3. Accessing the shell with Vagrant SSH
 `$ vagrant ssh app`
 This will SSH into a running Vagrant machine and give you access to the `app` virtual machine.
 
