@@ -47,7 +47,9 @@ Bundler version 2.1.4
 
 ## Running Vagrant 
 1.  Change directory (cd) into the project 
-`Anaiss-MacBook-Pro: cd nginx-reverse-proxy`
+```bash
+Anaiss-MacBook-Pro: cd nginx-reverse-proxy
+```
 
 2. Run vagrant in the `nginx-reverse-proxy` folder 
 ```bash
