@@ -45,7 +45,7 @@ Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ bundle --version
 Bundler version 2.1.4
 ```
 
-## Running Vagrant 
+## Running the Vagrant Machine
 1.  Change directory (cd) into the project 
 ```bash
 $ cd nginx-reverse-proxy
