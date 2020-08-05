@@ -97,12 +97,14 @@ vagrant@ubuntu-xenial:~$ systemctl status nginx
 lines 1-14/14 (END)
 ```
 4. Disable the default virtual host, that is pre-configured when Nginx is installed via Ubuntu's packet manager apt. Navigate to `/home/ubuntu/environment/` and locate the `provision.sh` file by typing the following: `$ nano provision.sh`
+
 Provision.sh
 ```bash
 unlink /etc/nginx/sites-enabled/default
 ```
 
 5. Enter the directory `cd /etc/nginx/sites-available/` and create a `reverse proxy` configuration file.
+
 Provision.sh
 ```bash
 cd /etc/nginx/sites-available
@@ -110,6 +112,7 @@ nano reverse-proxy.conf
 ```
 
 6. Paste the following Nginx configuration. The proxy server redirects all incoming connections on port 80, listening on port 3000.
+
 Provision.sh
 ```bash
 server {
@@ -121,6 +124,7 @@ server {
 ```
 
 7. Copy the configuration from `/etc/nginx/sites-available` to `/etc/nginx/sites-enabled` using a symbolic link.
+
 Provision.sh
  ```bash
 ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf
@@ -149,8 +153,8 @@ Your app is ready and listening on port 3000
 
 11. Enter the following links into the browser:
 
-`http://development.local/`
+[http://development.local/](http://development.local/)
 
-`http://development.local/fibonacci/8`
+[http://development.local/fibonacci/8](http://development.local/fibonacci/8)
 
-`http://development.local/posts`
+[http://development.local/posts](http://development.local/posts)
