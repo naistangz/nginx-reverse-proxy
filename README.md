@@ -1,10 +1,17 @@
-# Dependencies Prerequisites
+# Nginx Reverse Proxy App
+
+## To get started download the zip file
+![screenshot_download_zip](zip_file_screenshot.jpeg)
+
+## Prerequisites 
 1. [Vagrant](https://www.vagrantup.com/downloads.html)
 2. [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
 3. [Ruby - Preinstalled in Mac](https://www.ruby-lang.org/en/downloads/)
 4. [Bundler](https://bundler.io/) or `gem install bundler` in **Terminal** after **Ruby** has been installed.
 
 **For the extended documentation, click** [here](extendedREADME.md)
+**To read more about Vagrant and Virtual Machines, click** [here](https://github.com/naistangz/Technical_Training/tree/master/docs/Week7_VM)
+
 ## Checking versions for dependencies
 ```bash
 Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ vagrant --version
