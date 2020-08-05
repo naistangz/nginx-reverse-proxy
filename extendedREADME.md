@@ -66,11 +66,18 @@ Ensures no origin server ever communicates directly with that specific client| E
 ## Checking versions for dependencies
 ```bash
 Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ vagrant --version
-Vagrant 2.2.9
+```
+
+```bash
 Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ ruby --version
 ruby 2.3.7p456 (2018-03-28 revision 63024) [universal.x86_64-darwin18]
+```
+
+```bash
 Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ bundle --version
 Bundler version 2.1.4
+```
+
 ```
 # Git Clone this repository onto your local machine 
 `git clone` [https://github.com/naistangz/nginx-reverse-proxy.git](https://github.com/naistangz/nginx-reverse-proxy.git)

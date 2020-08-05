@@ -3,9 +3,13 @@
 Nginx is a popular open-source web server. It can be useful to run on a virtual machine when hosting multiple websites. The general solution for running two web servers on a single system is to either use multiple IP addresses or different port numbers.
 This project demonstrates how to configure Nginx as a reverse proxy. 
 
-**To get started download the zip file**
+**To get started download the zip file or** `git clone` this repository onto your local machine
 
+**Option 1**
 ![screenshot_download_zip](zip_file_screenshot.jpeg) 
+
+**Option 2**
+`Anaiss-MacBook-Pro:PycharmProjects anaistang$ git clone https://github.com/naistangz/nginx-reverse-proxy.git`
 
 
 ## Prerequisites
@@ -23,14 +27,18 @@ You will need the following:
 ```bash
 Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ vagrant --version
 Vagrant 2.2.9
+```
+
+```bash
 Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ ruby --version
 ruby 2.3.7p456 (2018-03-28 revision 63024) [universal.x86_64-darwin18]
+```
+
+```bash
 Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ bundle --version
 Bundler version 2.1.4
 ```
 
-## Git Clone this repository onto your local machine 
-`git clone` [https://github.com/naistangz/nginx-reverse-proxy.git](https://github.com/naistangz/nginx-reverse-proxy.git)
 
 ## cd into the project 
 `Anaiss-MacBook-Pro: cd nginx-reverse-proxy`
