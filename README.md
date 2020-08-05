@@ -1,4 +1,9 @@
 # Nginx Reverse Proxy App
+
+**For the extended documentation, click** [here](extendedREADME.md)
+**To read more about Vagrant and Virtual Machines, click** [here](https://github.com/naistangz/Technical_Training/tree/master/docs/Week7_VM)
+
+
 ## Introduction
 Nginx is a popular open-source web server. It can be useful to run on a virtual machine when hosting multiple websites. The general solution for running two web servers on a single system is to either use multiple IP addresses or different port numbers.
 This project demonstrates how to configure Nginx as a reverse proxy. 
@@ -23,8 +28,6 @@ You will need the following:
 3. [Ruby - Preinstalled in Mac](https://www.ruby-lang.org/en/downloads/)
 4. [Bundler](https://bundler.io/) or `gem install bundler` in **Terminal** after **Ruby** has been installed.
 
-**For the extended documentation, click** [here](extendedREADME.md)
-**To read more about Vagrant and Virtual Machines, click** [here](https://github.com/naistangz/Technical_Training/tree/master/docs/Week7_VM)
 
 ## Checking versions for dependencies
 ```bash
