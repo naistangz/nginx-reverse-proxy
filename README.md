@@ -31,17 +31,17 @@ You will need the following:
 
 ## Checking versions for dependencies
 ```bash
-Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ vagrant --version
+$ vagrant --version
 Vagrant 2.2.9
 ```
 
 ```bash
-Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ ruby --version
+$ ruby --version
 ruby 2.3.7p456 (2018-03-28 revision 63024) [universal.x86_64-darwin18]
 ```
 
 ```bash
-Anaiss-MacBook-Pro:nginx-reverse-proxy anaistang$ bundle --version
+$ bundle --version
 Bundler version 2.1.4
 ```
 
