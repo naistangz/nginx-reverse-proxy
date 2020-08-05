@@ -1,9 +1,15 @@
 # Nginx Reverse Proxy App
+## Introduction
+Nginx is a popular open-source web server. It can be useful to run on a virtual machine when hosting multiple websites. The general solution for running two web servers on a single system is to either use multiple IP addresses or different port numbers.
+This project demonstrates how to configure Nginx as a reverse proxy. 
 
-## To get started download the zip file
-![screenshot_download_zip](zip_file_screenshot.jpeg)
+**To get started download the zip file**
+![screenshot_download_zip](zip_file_screenshot.jpeg) 
 
-## Prerequisites 
+
+## Prerequisites
+You will need the following:
+
 1. [Vagrant](https://www.vagrantup.com/downloads.html)
 2. [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
 3. [Ruby - Preinstalled in Mac](https://www.ruby-lang.org/en/downloads/)
