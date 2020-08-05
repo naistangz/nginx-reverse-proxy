@@ -134,7 +134,7 @@ ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/rev
 ```bash
 nginx -t
 ```
-which returns 
+**which returns**
 ```bash
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
@@ -146,7 +146,7 @@ sudo systemctl restart nginx
 ```
 
 10. Run the app. Navigate to `cd /home/ubuntu/app/app.js`. And run the app by typing the following: `node app.js`.
-Which returns:
+**which returns**
 ```bash
 Your app is ready and listening on port 3000
 ```
