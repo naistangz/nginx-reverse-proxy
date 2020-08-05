@@ -11,7 +11,7 @@ This project demonstrates how to configure Nginx as a reverse proxy.
 **Option 2**
 Open up **Terminal** and enter the following 
 ```bash
-anaistang$ git clone https://github.com/naistangz/nginx-reverse-proxy.git
+git clone https://github.com/naistangz/nginx-reverse-proxy.git
 ```
 
 
