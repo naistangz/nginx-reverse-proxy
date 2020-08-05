@@ -4,6 +4,7 @@ Nginx is a popular open-source web server. It can be useful to run on a virtual 
 This project demonstrates how to configure Nginx as a reverse proxy. 
 
 **To get started download the zip file**
+
 ![screenshot_download_zip](zip_file_screenshot.jpeg) 
 
 
