@@ -9,9 +9,9 @@ This project demonstrates how to configure Nginx as a reverse proxy.
 ![screenshot_download_zip](zip_file_screenshot.jpeg) 
 
 **Option 2**
-
+Open up **Terminal** and enter the following 
 ```bash
-Anaiss-MacBook-Pro:PycharmProjects anaistang$ git clone https://github.com/naistangz/nginx-reverse-proxy.git
+anaistang$ git clone https://github.com/naistangz/nginx-reverse-proxy.git
 ```
 
 
