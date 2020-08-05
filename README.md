@@ -98,14 +98,20 @@ lines 1-14/14 (END)
 ```
 4. Disable the default virtual host, that is pre-configured when Nginx is installed via Ubuntu's packet manager apt. Navigate to `/home/ubuntu/environment/` and locate the `provision.sh` file by typing the following: `$ nano provision.sh`
 
-Provision.sh
+**Provision.sh**
+```bash
+$ cd /home/ubuntu/environment/
+$ nano provision.sh
+```
+
+**Paste the following:**
 ```bash
 unlink /etc/nginx/sites-enabled/default
 ```
 
 5. Enter the directory `cd /etc/nginx/sites-available/` and create a `reverse proxy` configuration file.
 
-Provision.sh
+**Provision.sh**
 ```bash
 cd /etc/nginx/sites-available
 nano reverse-proxy.conf
@@ -113,7 +119,7 @@ nano reverse-proxy.conf
 
 6. Paste the following Nginx configuration. The proxy server redirects all incoming connections on port 80, listening on port 3000.
 
-Provision.sh
+**Provision.sh**
 ```bash
 server {
   listen 80;
@@ -125,7 +131,7 @@ server {
 
 7. Copy the configuration from `/etc/nginx/sites-available` to `/etc/nginx/sites-enabled` using a symbolic link.
 
-Provision.sh
+**Provision.sh**
  ```bash
 ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf
 ```
