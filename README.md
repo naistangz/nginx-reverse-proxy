@@ -1,7 +1,7 @@
 # Nginx Reverse Proxy App
 
-**For the extended documentation, click** [here](extendedREADME.md)
-**To read more about Vagrant and Virtual Machines, click** [here](https://github.com/naistangz/Technical_Training/tree/master/docs/Week7_VM)
+> - **For the extended documentation, click** [here](extendedREADME.md)
+> - **To read more about Vagrant and Virtual Machines, click** [here](https://github.com/naistangz/Technical_Training/tree/master/docs/Week7_VM)
 
 
 ## Introduction
