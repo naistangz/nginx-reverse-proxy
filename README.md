@@ -56,7 +56,7 @@ $ cd nginx-reverse-proxy
 $ vagrant up 
 ```
 
-3. This will return:
+3. Once the virtual machines have run it should return:
 ```bash
 Your app is ready and listening on port 3000
 ```
