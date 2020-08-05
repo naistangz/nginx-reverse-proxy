@@ -152,6 +152,7 @@ sudo systemctl restart nginx
 ```
 
 10. Run the app. Navigate to `cd /home/ubuntu/app/app.js`. And run the app by typing the following: `node app.js`.
+
 **which returns**
 ```bash
 Your app is ready and listening on port 3000
