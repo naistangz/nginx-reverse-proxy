@@ -49,13 +49,19 @@ Bundler version 2.1.4
 1.  Change directory (cd) into the project 
 `Anaiss-MacBook-Pro: cd nginx-reverse-proxy`
 
-2. Run vagrant in nginx-reverse-proxy folder
-`$ vagrant up` in Terminal
+2. Run vagrant in the `nginx-reverse-proxy` folder 
+```bash
+$ vagrant up 
+```
 This will create, configure and provision two virtual machines, the `app` and `db` machine according to the Vagrantfile.
 
 3. Accessing the shell with Vagrant SSH
-`$ vagrant ssh app`
+```bash
+$ vagrant ssh app
+```
 This will SSH into a running Vagrant machine and give you access to the `app` virtual machine.
+
+**which returns**
 
 ```bash
 Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.4.0-186-generic x86_64)
